@@ -1,0 +1,71 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" href="css/all.min.css"/>
+		<link rel="stylesheet" href="css/index_style.css"/>
+	
+	</head>
+	<body>
+
+	<div class="container py-4">
+		
+		
+	<div class="form-group">
+		<label>userName :</label>
+		<input onblur="validateUserName()" id="userName" class="form-control"/>
+		<div id="userNameAlert" class="alert alert-danger	 mt-2">userName must be 5 letters</div>
+	</div>	
+		
+		
+	<div class="form-group">
+		<label>userAge :</label>
+		<input id="userAge" class="form-control"/>
+		<div class="alert alert-danger	 mt-2">Age must be between 10-80</div>
+	</div>	
+		
+		
+	<div class="form-group">
+		<label>userMail :</label>
+		<input id="userMail" class="form-control"/>
+		<div class="alert alert-danger	 mt-2">enter a valid mail</div>
+	</div>	
+		
+		
+	<div class="form-group">
+		<label>userPhone :</label>
+		<input onblur="validateUserPhone()" id="userPhone" class="form-control"/>
+		<div  id="userPhoneAlert" class="alert alert-danger	 mt-2">you phone must be vodafone</div>
+	</div>			
+		
+		
+	<button onclick="addUser()" class="btn btn-info float-right">register</button>	
+		
+		<div class="clearfix"></div>
+		
+		<table class="table table-striped mt-5">
+		
+			<thead>
+				<th>UserName :</th>
+				<th>UserAge :</th>
+				<th>UserMail :</th>
+				<th>UserPhone :</th>
+
+			</thead>
+			<tbody id="tableBody">
+			
+			
+			</tbody>
+		
+		</table>
+		
+	</div>
+	
+	
+		<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/index.js"></script>
+
+	
+	</body>
+</html>
